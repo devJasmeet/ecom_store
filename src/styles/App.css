@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+footer {
+  position:absolute;
+  bottom: 0;
+  background-color: #FFC400;
+  width: 100vw;
+  text-align: center;
+}
+
+#footermenu {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  padding: 1rem 0;
+  font-size: smaller;
+}
+
+#title {
+  font-size: 96px;
+  color:black;
+  text-align: center;
+  font-family: "Protest Guerrilla", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 2px #FFC400;
+}
+
+.container {
+  width: 60vw;
+  margin: auto;
+}
+
+.products-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: 0 auto;
+}
+
+p,h2 { margin: 0;}
+
+
+.card {
+  border: 1px solid #ccc;
+  border-radius : 8px;
+  margin: 10px;
+  width: 240px;
+  height:360px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.cardImage {
+  height: 50%;
+}
+
+.cardContent{
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  gap: 0.5rem;
+}
+
+.addToCartButton {
+  margin: 0.5rem 0;
+  background-color: transparent;
+    font-weight: 500;
+    padding: 0.4rem;
+    cursor: pointer;
+    font-family: inherit;
+    &:active {
+      background-color: #4CAF50;
+    }
+}
+
+.NavItem {
+  all: unset;
+  color: white;
+}
+
+@media (max-width: 1760px) and (min-width: 1310px){
+  .container {
+    width: 80vw;
+  }  
+}
+
+@media (max-width: 1310px) and (min-width: 840px){
+  .container {
+    width: 100vw;
+  }  
+}
+
+@media (max-width: 840px){
+
+  body {
+    margin: 0;
+  }
+
+  #title {
+    font-size: 48px;
+    color:black;
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    -webkit-text-stroke: 2px #FFC400;
+  }
+
+  .products-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 ;
+  }
+
+  .container {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    margin: 0;
+    padding: 0.5rem;
+    width: calc(100% - 1rem);
+    justify-content: start;
+    height: 15vh;
+  }
+
+  
+
+  .cardImage{
+    width: 40%;
+    min-width: 40%;
+    height: 100%;
+  }
+
+  .cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #footermenu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: center;
+    padding: 0.4rem 0;
+    font-size: 0.6rem;
+  }
+}
